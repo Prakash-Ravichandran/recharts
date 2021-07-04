@@ -3,6 +3,7 @@ import './App.css';
 import renderLineChart from './components/charts.components';
 import Example from './components/charts.components';
 import Example2 from './components/chartsProject.component';
+import TwoSimplePieChart from './components/TwoSimplePieChart';
 import CustomActiveShapePieChart from './components/CustomActiveShapePieChart';
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
          <h1>hello prakash</h1>
     <Example/>
     <Example2/>
+    <TwoSimplePieChart/>
     <CustomActiveShapePieChart/>
+    {/* <myPieChart/> */}
        </div>
        
   );
