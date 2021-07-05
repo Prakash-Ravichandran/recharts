@@ -19,6 +19,8 @@ const data03 = [
 ];
 
 const COLORS = ['#f44336', '#2196f3'];
+const COLORS2 = ['#b8aaac', '#b8aaac'];
+
 
 const LABELS = ['External Broken Links','Internal Broken Links'];
 
@@ -98,11 +100,11 @@ export default class TwoSimplePieChart extends PureComponent {
                   <text
                     x={x}
                     y={y}
-                    fill="#8884d8"
+                    fill={COLORS[index]}
                     textAnchor={x > cx ? "start" : "end"}
                     dominantBaseline="central"
                   >
-                    {data01[index].name} ({value})
+                    {data01[index].name} ({value}{".0%"})
                   </text>
                 );
               }}
@@ -116,12 +118,13 @@ export default class TwoSimplePieChart extends PureComponent {
                   position="left"
                   content={<CustomLabel value={"Prakash"} dataKey="name"/>}/>
               ))} */}
-              {data01.map((currentValue,index) => (
+
+              {/* {data01.map((currentValue,index) => (
                   <Label 
                   key = {`cell ${index}`}
                   position="outside"
                   content={<CustomLabel value={"hello"} dataKey="name"/>}/>
-              ))}
+              ))} */}
               <LabelList
                cx={100}
                cy={100}

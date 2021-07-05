@@ -9,11 +9,11 @@ import CustomActiveShapePieChart from './components/CustomActiveShapePieChart';
 function App() {
   return (
        <div>
-         <h1>hello prakash</h1>
-    <Example/>
-    <Example2/>
+         <h1>Link checker charts</h1>
+    {/* <Example/>
+    <Example2/> */}
     <TwoSimplePieChart/>
-    <CustomActiveShapePieChart/>
+    {/* <CustomActiveShapePieChart/> */}
     {/* <myPieChart/> */}
        </div>
        
